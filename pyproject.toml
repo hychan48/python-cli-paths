@@ -22,4 +22,4 @@ build-backend = "poetry.core.masonry.api"
 #console_scripts =
 #    my-example-utility = example.example_module:main
 [tool.poetry.scripts]
-my_package_cli = 'python_cli_paths.hello:run'
+my_package_cli = 'python_cli_paths.main:main'

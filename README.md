@@ -28,4 +28,14 @@ pli hello param
 # current:
 python path_hello.py param
 
+
+# https://stackoverflow.com/questions/59286983/how-to-run-a-script-using-pyproject-toml-settings-and-poetry
+poetry update # after updating pyproject.toml
+# dont need to update in another scirpt yet
+poetry run my_package_cli
+# probably need to add an alias or something
+#https://github.com/python-poetry/poetry/issues/2496
+
+#rename poetry perhaps?
+# check rasa imo
 ```
