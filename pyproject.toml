@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "python-cli-paths"
+version = "0.1.0"
+description = ""
+licence = "MIT"
+authors = ["JC <jchan48@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_cli_paths"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
