@@ -16,4 +16,16 @@ cd ../python-cli-paths/dist
 # add 
 [tool.poetry.dependencies]
 my-package = { file = "path/to/wheel.whl" }
+
+poetry remove 
+```
+
+
+```bash
+# want:
+pli hello param
+
+# current:
+python path_hello.py param
+
 ```

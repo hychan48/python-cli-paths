@@ -16,3 +16,10 @@ pytest = "^7.2.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+#https://godatadriven.com/blog/a-practical-guide-to-setuptools-and-pyproject-toml/
+#[options.entry_points]
+#console_scripts =
+#    my-example-utility = example.example_module:main
+[tool.poetry.scripts]
+my_package_cli = 'python_cli_paths.hello:run'
