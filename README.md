@@ -25,6 +25,8 @@ poetry remove
 # want:
 pli hello param
 
+Set-Alias -Name pli -Value "poetry run"
+
 # current:
 python path_hello.py param
 
@@ -38,4 +40,26 @@ poetry run my_package_cli
 
 #rename poetry perhaps?
 # check rasa imo
+```
+```ps1
+
+[//]: # https://powershell-guru.com/powershell-tip-35-list-and-remove-a-function/()
+[//]: # ( Remove-Item -Path Alias:pli)
+Remove-Item -Path Function:pli
+
+[//]: # (function pli&#40;[string]$input_str,[string]$input_str2&#41;)
+function pli([string]$input_str)
+{
+    poetry run my_package_cli $input_str
+}
+https://seankilleen.com/2020/04/how-to-create-a-powershell-alias-with-parameters/
+function Encode-Video([string]$VideoFileName, [string]$OutputFileName)
+{
+    ffmpeg -i "$VideoFileName" -vcodec h264 -acodec mp2 "$OutputFileName"
+}
+
+function Encode-Video([string]$VideoFileName, [string]$OutputFileName)
+{
+    ffmpeg -i "$VideoFileName" -vcodec h264 -acodec mp2 "$OutputFileName"
+}
 ```
