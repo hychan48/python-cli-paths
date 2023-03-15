@@ -6,6 +6,7 @@ authors = ["JC <jchan48@gmail.com>"]
 readme = "README.md"
 packages = [{include = "python_cli_paths"}]
 license = "MIT"
+#/home/ubuntu/.local/bin/poetry
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -23,3 +24,10 @@ build-backend = "poetry.core.masonry.api"
 #    my-example-utility = example.example_module:main
 [tool.poetry.scripts]
 my_package_cli = 'python_cli_paths.main:main'
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/7.2.x/reference/customize.html#pyproject-toml
+# https://docs.pytest.org/en/7.2.x/reference/reference.html#ini-options-ref
+# to think about this... shouldn't be project level
+log_cli = "True"
+log_cli_level = "WARNING"
