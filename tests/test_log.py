@@ -49,8 +49,7 @@ def test_name():
 
     log.warning(list(tmp))
 
-
-
+hi = None
 def test_class_tmp():
     # PyTest
     import sys
